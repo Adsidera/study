@@ -39,6 +39,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'fabrication'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -50,8 +52,19 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# pry instead of irb
+gem 'pry-rails'
+
+
+#bootstrap
+gem 'bootstrap', '~> 4.1.0'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #haml
 gem 'haml-rails'
+
+gem 'rest-client'
+
+gem 'awesome_print'

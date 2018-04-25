@@ -1,0 +1,17 @@
+.container.mx-auto.mt-5
+  .form  
+    = form_for @kitten do |f|
+      .form-group
+        %label name
+        = f.text_field :name
+      .form-group
+        %label age
+        = f.number_field :age
+      .form-group
+        %label softness
+        = f.text_field :softness
+      .form-group
+        %label cuteness
+        = f.text_field :cuteness
+      %button.btn.btn-primary
+        = f.submit "Submit"

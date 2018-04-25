@@ -1,0 +1,19 @@
+
+.container
+  .ul.mt-5.d-block
+    - @kittens.each do |kitten|
+      %li
+        = kitten.name
+      %li
+        = kitten.age
+      %li
+        = kitten.cuteness
+      %li
+        = kitten.softness
+      .ul.d-inline-block.mb-3
+        %li
+          = link_to 'Show', kitten_path(kitten)
+        %li  
+          = link_to 'Edit', edit_kitten_path(kitten)
+        %li  
+          = link_to 'Delete', kitten, method: :delete
